@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./responsive.css";
+import "./interactions.css";
 
 export const metadata: Metadata = {
   title: "The Shuga Archives — Birthday Edition",

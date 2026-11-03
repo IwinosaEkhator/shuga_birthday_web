@@ -1,0 +1,32 @@
+body{overflow-x:hidden}.stats,.film-reel{-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain}.enter,.research-form button,.finale button{min-height:48px}
+
+@media (max-width:1024px) and (min-width:701px){
+  .hero-photo{width:72%}.hero h1{font-size:18vw}.hero-copy{left:5vw}
+  .scrap{min-height:1000px}.scrap-title h2{font-size:9vw}.p-one{width:47vw}.p-two{width:36vw;right:4vw}.p-three{width:31vw;left:42vw}
+  .stat{padding:8vw 6vw}.stat strong{font-size:22vw}.stat h3{font-size:6vw}
+  .editorial-head h2{font-size:11vw}.mag-grid{grid-template-rows:50vh 32vh 50vh}
+  .starter h2{font-size:11vw}.cutout-photo{right:4vw;width:40vw}.starter-tags{width:48vw}
+  .research{gap:5vw;padding-inline:6vw}.quiet{gap:6vw;padding-inline:6vw}
+}
+
+@media (max-width:700px){
+  .hero{min-height:640px}.hero-copy{right:18px;bottom:22vh}.hero h1{font-size:clamp(5.2rem,25vw,7rem);line-height:.72;white-space:nowrap}.route{font-size:9px;line-height:1.5;max-width:75vw}.enter{bottom:4vh}.hero-photo{object-position:53% 28%}
+  .scrap{min-height:1120px}.scrap-title h2{font-size:clamp(4.2rem,18vw,6rem);line-height:.76}.scrap-title>p{max-width:86vw;font-size:13px}.paper-note{top:34vh}.p-one{top:49vh;height:270px}.p-two{top:72vh;height:340px}.cast-list{bottom:3vh;right:18px}.cast-list p{font-size:10px}.cast-list span{line-height:1.35}
+  .numbers-intro{min-height:85svh}.numbers-intro h2{font-size:clamp(4.3rem,19vw,6.2rem);line-height:.75}.numbers-intro>p{font-size:13px}
+  .stats{scroll-snap-stop:always}.stat{height:86svh;min-height:640px}.stat strong{font-size:clamp(7rem,31vw,10rem)}.stat-4 strong{font-size:clamp(4.7rem,21vw,7rem)}.stat h3{font-size:clamp(2.2rem,10vw,3.8rem);overflow-wrap:anywhere}.stat p{font-size:13px}
+  .editorial-head h2{font-size:clamp(5rem,22vw,7.2rem)}.mag-grid{margin-top:8vh;gap:9px;grid-template-rows:58vh 30vh 43vh}.mag-grid blockquote{font-size:1.25rem}.mag-grid figure span{font-size:7px}.overwhelming{margin-top:10vh;font-size:clamp(4rem,19vw,6rem)}
+  .film h2{font-size:clamp(4.5rem,20vw,6.5rem)}.film header>p{font-size:12px}.film-reel{gap:18px;margin-top:8vh}.film-reel article{min-width:92vw}.video-shell{padding:5px}.video-shell video{height:56svh;max-height:540px}.film-reel article>p{gap:16px;line-height:1.5}
+  .starter{min-height:900px}.starter h2{font-size:clamp(4rem,17vw,5.7rem);line-height:.72}.starter h2 span{-webkit-text-stroke:1px var(--plum)}.cutout-photo{height:55vh;min-height:430px;bottom:12vh}.starter-tags{bottom:3vh;gap:6px}.starter-tags b,.starter-tags small{padding:8px 10px;font-size:10px}.b1{top:26vh;right:2vw}
+  .research{padding-block:11vh}.research h2{font-size:clamp(3rem,13vw,4.4rem)}.research-copy>strong{font-size:18vw}.research-form label{margin-bottom:28px}.research-form input{font-size:16px}
+  .quiet{gap:8vh}.quiet-photo{height:68svh}.quiet-copy>h2{font-size:clamp(5rem,20vw,7rem)}.quiet-copy .lead{margin-bottom:9vh}.quiet-copy article{padding-bottom:6vh}.quiet-copy article h3{font-size:2rem}
+  .letters>h2{font-size:clamp(4rem,18vw,6rem)}.letter-grid p{font-size:15px}.then-now img{height:30svh}.finale{min-height:110svh}.finale h2{font-size:clamp(4.5rem,19vw,6.5rem)}
+}
+
+@media (max-width:420px){
+  .hero{padding:18px}.hero-copy{left:18px}.hero h1{font-size:23vw}.hero-copy>p:first-child{font-size:9px}.hero-top{font-size:8px}.enter{left:18px;right:18px}
+  .scrap{min-height:1060px}.scrap-title{left:18px}.scrap-title h2{font-size:16.5vw}.paper-note{padding:14px 18px}.p-one{height:245px}.p-two{height:315px}.cast-list{left:18px}.cast-list p{grid-template-columns:78px 1fr}
+  .stat{padding-inline:18px}.stat h3{font-size:9vw}.swipe-hint{padding-inline:18px;line-height:1.4}
+  .editorial,.film,.letters{padding-inline:18px}.mag-grid{grid-template-rows:52vh 27vh 38vh}.mag-grid blockquote{padding:14px;font-size:1.08rem}.mag-grid blockquote small{line-height:1.4}
+  .starter{padding-inline:18px}.cutout-photo{width:76vw;right:-9vw}.starter-tags{left:18px;width:91vw}.research,.quiet{padding-inline:18px}.research h2{font-size:12vw}.quiet-copy>h2{font-size:19vw}
+  .then-now{grid-template-columns:1fr;max-width:280px}.then-now img{height:38vh}.finale h2{font-size:18vw}
+}

@@ -270,6 +270,8 @@
 }
 
 :root {
+  --font-display: Georgia,"Times New Roman",serif;
+  --font-sans: Arial,"Helvetica Neue",sans-serif;
   --plum: #351e28;
   --red: #8c1d2c;
   --bright: #d72732;

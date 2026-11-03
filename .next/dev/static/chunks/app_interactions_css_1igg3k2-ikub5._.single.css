@@ -1,0 +1,367 @@
+/* [project]/app/interactions.css [app-client] (css) */
+.polaroid {
+  will-change: transform;
+  transition: box-shadow .35s;
+}
+
+.polaroid:hover {
+  box-shadow: 0 30px 70px #351e2850;
+}
+
+.polaroid figcaption {
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+.video-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.playback-code {
+  color: #fff;
+  letter-spacing: .22em;
+  pointer-events: none;
+  background: #111;
+  padding: 7px 9px;
+  font-size: 8px;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.film-reel article > small {
+  color: #aaa;
+  max-width: 540px;
+  font-size: 12px;
+  line-height: 1.6;
+  display: block;
+}
+
+.film-reel article > p b {
+  font-size: 10px;
+}
+
+.stat-4 {
+  overflow: hidden;
+}
+
+.medal-button {
+  color: #fff;
+  letter-spacing: .18em;
+  cursor: pointer;
+  z-index: 3;
+  background: none;
+  border: 1px solid #fff;
+  width: max-content;
+  min-height: 46px;
+  margin-top: 34px;
+  padding: 0 20px;
+  font-size: 10px;
+  transition: background .25s, color .25s;
+  position: relative;
+}
+
+.medal-button:hover {
+  color: var(--bright);
+  background: #fff;
+}
+
+.giant-medal {
+  filter: drop-shadow(0 28px 20px #351e2850);
+  pointer-events: none;
+  transform-origin: center;
+  font-size: clamp(9rem, 27vw, 24rem);
+  position: absolute;
+  top: 11vh;
+  right: 7vw;
+}
+
+.medal-awarded strong, .medal-awarded h3 {
+  z-index: 2;
+  text-shadow: 0 6px 25px #351e2860;
+  position: relative;
+}
+
+.letters {
+  position: relative;
+}
+
+.letter-grid {
+  perspective: 1200px;
+}
+
+.envelope {
+  text-align: left;
+  cursor: pointer;
+  border: 0;
+  min-height: 420px;
+  padding: 42px;
+  transition: transform .5s cubic-bezier(.22, 1, .36, 1), box-shadow .5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.envelope:before {
+  content: "";
+  clip-path: polygon(0 0, 50% 48%, 100% 0);
+  opacity: .42;
+  position: absolute;
+  inset: 0;
+}
+
+.envelope:after {
+  content: "";
+  clip-path: polygon(0 100%, 50% 48%, 100% 100%);
+  opacity: .2;
+  position: absolute;
+  inset: 0;
+}
+
+.envelope > * {
+  z-index: 2;
+  position: relative;
+}
+
+.envelope:hover {
+  transform: translateY(-12px) rotateX(2deg);
+  box-shadow: 0 28px 60px #351e2835;
+}
+
+.envelope > span {
+  letter-spacing: .22em;
+  font-size: 9px;
+  display: block;
+}
+
+.envelope > i {
+  font: italic 1rem var(--font-display);
+  margin-top: 54px;
+  display: block;
+}
+
+.envelope h3 {
+  font: 600 clamp(3rem,5vw,5rem)/.82 var(--font-display);
+  margin: 22px 0;
+}
+
+.envelope p {
+  font-size: 13px;
+}
+
+.envelope b {
+  letter-spacing: .18em;
+  font-size: 10px;
+  position: absolute;
+  bottom: 36px;
+  left: 42px;
+}
+
+.maroh-envelope {
+  color: #f4e8d8;
+  background: #351e28;
+}
+
+.maroh-envelope:before, .maroh-envelope:after {
+  background: #9f6d75;
+}
+
+.iwinosa-envelope {
+  color: #351e28;
+  background: #ead8bf;
+}
+
+.iwinosa-envelope:before, .iwinosa-envelope:after {
+  background: #8c1d2c;
+}
+
+.letter-overlay {
+  z-index: 120;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: #211316db;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 4vh 4vw;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.letter-overlay article {
+  width: min(760px, 100%);
+  max-height: 92vh;
+  padding: 70px clamp(28px, 6vw, 80px);
+  position: relative;
+  overflow-y: auto;
+  box-shadow: 0 30px 100px #0008;
+}
+
+.maroh-letter {
+  color: #351e28;
+  background: #f2e2cf;
+}
+
+.iwinosa-letter {
+  color: #351e28;
+  background: #fffaf0;
+  border-top: 12px solid #8c1d2c;
+}
+
+.letter-overlay h3 {
+  font: 600 clamp(3rem,7vw,5.8rem)/.85 var(--font-display);
+  margin: 35px 0;
+}
+
+.letter-overlay p {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.letter-overlay article > b {
+  font: 2rem var(--font-display);
+  margin-top: 38px;
+  display: block;
+}
+
+.close-letter {
+  letter-spacing: .16em;
+  cursor: pointer;
+  color: inherit;
+  background: none;
+  border: 0;
+  font-size: 10px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.finale {
+  overflow: hidden;
+}
+
+.final-surprise {
+  z-index: 110;
+  background: var(--plum);
+  text-align: left;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  position: fixed;
+  inset: 0;
+}
+
+.final-surprise > img {
+  object-fit: cover;
+  object-position: center 28%;
+  filter: grayscale();
+  width: 100%;
+  height: 100%;
+}
+
+.final-surprise > div {
+  flex-direction: column;
+  justify-content: center;
+  padding: 8vw;
+  display: flex;
+}
+
+.final-surprise span {
+  letter-spacing: .22em;
+  font-size: 9px;
+}
+
+.final-surprise strong {
+  font: 600 clamp(4rem,9vw,9rem)/.72 var(--font-display);
+  letter-spacing: -.055em;
+  margin: 7vh 0 4vh;
+}
+
+.final-surprise small {
+  letter-spacing: .12em;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .polaroid figcaption {
+    font-size: .8rem;
+  }
+
+  .giant-medal {
+    opacity: .85;
+    font-size: 55vw;
+    top: 10vh;
+    right: -8vw;
+  }
+
+  .medal-button {
+    margin-top: 24px;
+  }
+
+  .letter-grid {
+    gap: 22px;
+  }
+
+  .envelope {
+    min-height: 360px;
+    padding: 28px;
+  }
+
+  .envelope > i {
+    margin-top: 40px;
+  }
+
+  .envelope h3 {
+    font-size: 3.2rem;
+  }
+
+  .envelope b {
+    bottom: 28px;
+    left: 28px;
+  }
+
+  .letter-overlay {
+    padding: 0;
+  }
+
+  .letter-overlay article {
+    border-radius: 24px 24px 0 0;
+    max-height: 94svh;
+    padding: 60px 25px 45px;
+  }
+
+  .letter-overlay p {
+    font-size: 15px;
+  }
+
+  .final-surprise {
+    grid-template-rows: 45svh 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .final-surprise > div {
+    padding: 28px;
+  }
+
+  .final-surprise strong {
+    margin: 5vh 0 3vh;
+    font-size: clamp(4rem, 15vw, 6rem);
+  }
+
+  .playback-code {
+    top: 12px;
+    left: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .polaroid, .envelope, .medal-button {
+    transition: none;
+  }
+
+  .letter-overlay {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+/*# sourceMappingURL=app_interactions_css_1igg3k2-ikub5._.single.css.map*/

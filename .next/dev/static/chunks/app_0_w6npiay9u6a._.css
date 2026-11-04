@@ -2936,10 +2936,61 @@ body {
 
 .starter h2:before {
   content: "FILE 05 / FIELD GUIDE";
-  font: 700 10px/1 var(--sans);
+  font: 700 10px/1 var(--font-sans);
   letter-spacing: .14em;
   margin-bottom: 24px;
   display: block;
+}
+
+@media (min-width: 701px) {
+  .starter {
+    min-height: 105svh;
+    padding: 11vh 6vw;
+  }
+
+  .starter h2 {
+    max-width: 68vw;
+    font-size: clamp(4.5rem, 8.5vw, 8rem);
+    line-height: .72;
+  }
+
+  .cutout-photo {
+    z-index: 3;
+    width: min(31vw, 420px);
+    height: 66vh;
+    bottom: 3vh;
+    right: 4vw;
+  }
+
+  .starter-tags {
+    gap: 8px;
+    width: 56vw;
+    bottom: 8vh;
+    left: 6vw;
+  }
+
+  .starter-tags b, .starter-tags small {
+    padding: 9px 12px;
+    font-size: 10px;
+  }
+
+  .b1 {
+    width: 96px;
+    height: 96px;
+    top: 9vh;
+    right: 2vw;
+  }
+
+  .b2 {
+    width: 90px;
+    height: 90px;
+    bottom: 9vh;
+    right: 33vw;
+  }
+
+  .hand-arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {

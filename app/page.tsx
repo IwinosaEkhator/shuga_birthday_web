@@ -717,10 +717,10 @@ export default function Home() {
         >
           <Img
             src={camp + "shuga/IMG-20251205-WA0223.jpg"}
-            alt="Maroh, Shuga and Iwinosa together at Ekiti camp"
+            alt="Shuga posing with a fellow corps member at Ekiti camp"
           />
           <figcaption>
-            The plug, the beneficiary and the reason this archive exists.
+            Two camp faces, one tie-dye stand, and a memory worth filing.
           </figcaption>
         </motion.figure>
         <motion.figure
@@ -1110,7 +1110,7 @@ export default function Home() {
           <figure>
             <Img
               src={camp + "shuga/IMG-20251205-WA0223.jpg"}
-              alt="The three friends at Ekiti camp"
+              alt="Shuga posing with a fellow corps member at Ekiti camp"
             />
             <figcaption>EKITI — NOVEMBER 2025</figcaption>
           </figure>

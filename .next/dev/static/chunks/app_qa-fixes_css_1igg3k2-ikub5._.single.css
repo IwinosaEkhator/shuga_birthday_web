@@ -1,0 +1,224 @@
+/* [project]/app/qa-fixes.css [app-client] (css) */
+.research > * {
+  min-width: 0;
+}
+
+.research-copy, .research-form {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.research-copy h2, .research-copy strong, .research-copy p {
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.form-explainer {
+  font: 600 11px/1.6 var(--sans);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-left: 2px solid var(--red);
+  margin-bottom: 34px;
+  padding-left: 14px;
+}
+
+.research-form label span {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  display: flex;
+}
+
+.research-form label small {
+  font: 500 10px/1.4 var(--sans);
+  opacity: .62;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.form-error {
+  color: #9f1528;
+  font: 700 12px/1.5 var(--sans);
+  margin-top: 14px;
+}
+
+.research-form input[aria-invalid="true"] {
+  border-color: #9f1528;
+}
+
+.film-controls {
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.film-controls button {
+  color: var(--cream);
+  min-height: 44px;
+  font: 700 10px var(--sans);
+  letter-spacing: .12em;
+  background: none;
+  border: 1px solid #f4e8d873;
+  padding: 0 18px;
+}
+
+.film-controls button:disabled {
+  opacity: .32;
+}
+
+.film-controls span, .caption-note {
+  color: var(--cream);
+  font: 600 10px/1.5 var(--sans);
+  letter-spacing: .12em;
+}
+
+.caption-note {
+  text-align: center;
+  opacity: .65;
+  margin-top: 15px;
+}
+
+.skip-sincere {
+  z-index: 4;
+  color: var(--cream);
+  font: 700 9px var(--sans);
+  letter-spacing: .1em;
+  opacity: .8;
+  text-decoration: none;
+  position: absolute;
+  bottom: 4.7vh;
+  left: calc(50% + 105px);
+}
+
+.maroh-envelope h3 {
+  color: var(--cream) !important;
+}
+
+@media (min-width: 701px) {
+  .scrap-title {
+    max-width: 48vw;
+  }
+
+  .p-one {
+    top: 49vh;
+  }
+
+  .p-two {
+    top: 45vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .research {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .research-copy h2 {
+    font-size: clamp(2.65rem, 12vw, 4.2rem);
+    line-height: .92;
+  }
+
+  .research-copy > strong {
+    font-size: clamp(3.2rem, 15.5vw, 5rem);
+    line-height: .88;
+    display: block;
+  }
+
+  .stat-4 strong {
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    font-size: clamp(4rem, 19vw, 6.4rem);
+  }
+
+  .scrap {
+    min-height: 1240px;
+  }
+
+  .scrap-title {
+    max-width: calc(100vw - 36px);
+  }
+
+  .paper-note {
+    top: 43vh;
+    right: 18px;
+  }
+
+  .p-one {
+    top: 57vh;
+  }
+
+  .p-two {
+    top: 82vh;
+  }
+
+  .p-three {
+    display: none;
+  }
+
+  .cast-list {
+    bottom: 2vh;
+  }
+
+  .film-reel article > p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    display: flex;
+  }
+
+  .film-controls {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .film-controls button {
+    padding: 0 12px;
+  }
+
+  .skip-sincere {
+    bottom: 1.4vh;
+    left: 18px;
+  }
+
+  .enter {
+    bottom: 6.5vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .research-copy h2 {
+    font-size: 11.3vw;
+  }
+
+  .research-copy > strong {
+    font-size: 14.5vw;
+  }
+
+  .stat-4 strong {
+    font-size: 18vw;
+  }
+
+  .paper-note {
+    top: 44vh;
+  }
+
+  .p-one {
+    top: 59vh;
+  }
+
+  .p-two {
+    top: 84vh;
+  }
+}
+
+.starter h2:before {
+  content: "FILE 05 / FIELD GUIDE";
+  font: 700 10px/1 var(--sans);
+  letter-spacing: .14em;
+  margin-bottom: 24px;
+  display: block;
+}
+
+/*# sourceMappingURL=app_qa-fixes_css_1igg3k2-ikub5._.single.css.map*/

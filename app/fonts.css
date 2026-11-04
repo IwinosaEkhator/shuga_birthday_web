@@ -1,0 +1,5 @@
+@font-face{font-family:"Cormorant Garamond Local";src:url("/fonts/CormorantGaramond-Variable.ttf") format("truetype");font-style:normal;font-weight:300 700;font-display:swap}
+@font-face{font-family:"Cormorant Garamond Local";src:url("/fonts/CormorantGaramond-Italic-Variable.ttf") format("truetype");font-style:italic;font-weight:300 700;font-display:swap}
+@font-face{font-family:"DM Sans Local";src:url("/fonts/DMSans-Variable.ttf") format("truetype");font-style:normal;font-weight:100 1000;font-display:swap}
+@font-face{font-family:"DM Sans Local";src:url("/fonts/DMSans-Italic-Variable.ttf") format("truetype");font-style:italic;font-weight:100 1000;font-display:swap}
+:root{--font-display:"Cormorant Garamond Local",Georgia,serif!important;--font-sans:"DM Sans Local",Arial,sans-serif!important}

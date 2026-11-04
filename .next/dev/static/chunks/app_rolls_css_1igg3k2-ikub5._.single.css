@@ -1,0 +1,237 @@
+/* [project]/app/rolls.css [app-client] (css) */
+.rolls-invitation {
+  text-align: center;
+  min-height: 72vh;
+  color: var(--cream);
+  background: #171214;
+  border-top: 1px solid #f4e8d82e;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 6vw;
+  display: flex;
+  position: relative;
+}
+
+.rolls-invitation > span, .rolls-invitation > p {
+  font: 600 10px/1.6 var(--sans);
+  letter-spacing: .14em;
+}
+
+.rolls-invitation > h2 {
+  margin: 28px 0 20px;
+  font-size: clamp(3.5rem, 9vw, 9rem);
+  line-height: .76;
+}
+
+.rolls-invitation > p {
+  opacity: .68;
+  max-width: 480px;
+}
+
+.rolls-invitation > button {
+  border: 1px solid var(--cream);
+  min-height: 54px;
+  color: var(--cream);
+  font: 700 10px var(--sans);
+  letter-spacing: .12em;
+  background: none;
+  margin-top: 38px;
+  padding: 0 24px;
+}
+
+.rolls-overlay {
+  z-index: 1000;
+  background: #0c080af5;
+  padding: 24px;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+}
+
+.rolls-dialog {
+  width: min(1180px, 100%);
+  min-height: calc(100vh - 48px);
+  color: var(--cream);
+  margin: auto;
+}
+
+.rolls-dialog > header {
+  border-bottom: 1px solid #f4e8d840;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.rolls-dialog header small, .rolls-help {
+  font: 700 9px var(--sans);
+  letter-spacing: .14em;
+  opacity: .65;
+}
+
+.rolls-dialog header h2 {
+  margin-top: 12px;
+  font-size: clamp(2.6rem, 6vw, 6rem);
+  line-height: .8;
+}
+
+.rolls-close {
+  min-width: 92px;
+  min-height: 48px;
+  color: var(--cream);
+  font: 700 10px var(--sans);
+  letter-spacing: .1em;
+  background: none;
+  border: 1px solid #f4e8d880;
+}
+
+.rolls-stage {
+  grid-template-columns: 64px minmax(0, 1fr) 64px;
+  align-items: center;
+  gap: 18px;
+  max-width: 900px;
+  margin: 28px auto;
+  display: grid;
+}
+
+.rolls-stage figure {
+  min-width: 0;
+}
+
+.rolls-stage figure img {
+  object-fit: contain;
+  background: #090708;
+  width: 100%;
+  height: min(58vh, 680px);
+  display: block;
+}
+
+.rolls-stage figcaption {
+  font: 600 11px/1.5 var(--sans);
+  letter-spacing: .06em;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 14px;
+  display: flex;
+}
+
+.rolls-stage figcaption span {
+  text-align: right;
+  opacity: .72;
+  max-width: 540px;
+}
+
+.roll-arrow {
+  height: 64px;
+  color: var(--cream);
+  background: none;
+  border: 1px solid #f4e8d859;
+  font-size: 24px;
+}
+
+.contact-sheet {
+  grid-template-columns: repeat(10, minmax(72px, 1fr));
+  gap: 8px;
+  margin-top: 30px;
+  display: grid;
+}
+
+.contact-sheet button {
+  aspect-ratio: 4 / 5;
+  background: #2b2226;
+  border: 2px solid #0000;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-sheet button[aria-current="true"] {
+  border-color: #e32b3f;
+}
+
+.contact-sheet img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-sheet span {
+  color: var(--cream);
+  font: 700 8px var(--sans);
+  background: #171214;
+  padding: 3px 5px;
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+}
+
+.rolls-help {
+  text-align: center;
+  margin: 18px 0 6px;
+}
+
+@media (max-width: 700px) {
+  .rolls-invitation {
+    min-height: 65vh;
+    padding-inline: 18px;
+  }
+
+  .rolls-invitation > h2 {
+    font-size: 15vw;
+  }
+
+  .rolls-overlay {
+    padding: 14px;
+  }
+
+  .rolls-dialog {
+    min-height: calc(100vh - 28px);
+  }
+
+  .rolls-dialog > header {
+    align-items: center;
+  }
+
+  .rolls-dialog header h2 {
+    font-size: 10vw;
+  }
+
+  .rolls-dialog header small {
+    display: none;
+  }
+
+  .rolls-close {
+    min-width: 80px;
+  }
+
+  .rolls-stage {
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    gap: 6px;
+  }
+
+  .rolls-stage figure img {
+    height: 52vh;
+  }
+
+  .rolls-stage figcaption {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .rolls-stage figcaption span {
+    text-align: left;
+  }
+
+  .roll-arrow {
+    height: 54px;
+  }
+
+  .contact-sheet {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
+}
+
+/*# sourceMappingURL=app_rolls_css_1igg3k2-ikub5._.single.css.map*/

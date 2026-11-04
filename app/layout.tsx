@@ -18,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
-        <link rel="preload" as="image" href="/optimized/images/hero-portrait.avif" type="image/avif" />
+        <link rel="preload" as="image" href="/optimized/images/hero-portrait-800.avif" imageSrcSet="/optimized/images/hero-portrait-480.avif 480w, /optimized/images/hero-portrait-800.avif 800w, /optimized/images/hero-portrait-1200.avif 1200w, /optimized/images/hero-portrait.avif 1600w" imageSizes="100vw" type="image/avif" />
         <meta name="theme-color" content="#351e28" />
       </head>
       <body>{children}</body>

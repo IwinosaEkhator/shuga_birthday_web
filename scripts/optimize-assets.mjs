@@ -26,10 +26,14 @@ const images = [
 
 for (const [relative, name] of images) {
   const input = join(source, ...relative.split("/"));
-  if (existsSync(join(imageOut, `${name}.webp`)) && existsSync(join(imageOut, `${name}.avif`))) continue;
   const pipeline = sharp(input).rotate().resize({ width: 1600, height: 2000, fit: "inside", withoutEnlargement: true });
   await pipeline.clone().webp({ quality: 80, effort: 5 }).toFile(join(imageOut, `${name}.webp`));
   await pipeline.clone().avif({ quality: 56, effort: 5 }).toFile(join(imageOut, `${name}.avif`));
+  for (const width of [480, 800, 1200]) {
+    const responsive = sharp(input).rotate().resize({ width, withoutEnlargement: true });
+    await responsive.clone().webp({ quality: 78, effort: 5 }).toFile(join(imageOut, `${name}-${width}.webp`));
+    await responsive.clone().avif({ quality: 54, effort: 5 }).toFile(join(imageOut, `${name}-${width}.avif`));
+  }
 }
 
 const videos = [

@@ -67,27 +67,31 @@ function Img({ src, alt = "", className = "" }) {
         lineNumber: 9,
         columnNumber: 337
     }, this);
-    const base = `/optimized/images/${match[1]}`;
+    const base = `/optimized/images/${match[1]}`, sizes = hero ? "100vw" : "(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 55vw";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("picture", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
-                srcSet: `${base}.avif`,
+                srcSet: `${base}-480.avif 480w, ${base}-800.avif 800w, ${base}-1200.avif 1200w, ${base}.avif 1600w`,
+                sizes: sizes,
                 type: "image/avif"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 9,
-                columnNumber: 536
+                columnNumber: 613
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
-                srcSet: `${base}.webp`,
+                srcSet: `${base}-480.webp 480w, ${base}-800.webp 800w, ${base}-1200.webp 1200w, ${base}.webp 1600w`,
+                sizes: sizes,
                 type: "image/webp"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 9,
-                columnNumber: 587
+                columnNumber: 755
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                src: `${base}.webp`,
+                src: `${base}-800.webp`,
+                srcSet: `${base}-480.webp 480w, ${base}-800.webp 800w, ${base}-1200.webp 1200w, ${base}.webp 1600w`,
+                sizes: sizes,
                 alt: effectiveAlt,
                 loading: hero ? "eager" : "lazy",
                 fetchPriority: hero ? "high" : "auto",
@@ -96,13 +100,13 @@ function Img({ src, alt = "", className = "" }) {
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 9,
-                columnNumber: 638
+                columnNumber: 897
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
         lineNumber: 9,
-        columnNumber: 527
+        columnNumber: 604
     }, this);
 }
 _c = Img;
@@ -754,8 +758,8 @@ function UnpublishedRolls() {
             "Friends posing together beside the camp tie-dye stand"
         ],
         [
-            "The original trio, before anyone knew this would become a whole archive.",
-            "Iwinosa, Shuga and Maroh together at the camp market"
+            "Three camp faces, one tie-dye stand, and another moment worth keeping.",
+            "Three corps members posing together at the camp tie-dye stand"
         ],
         [
             "Golden hour, camp cap, and evidence that the subject was always camera-ready.",

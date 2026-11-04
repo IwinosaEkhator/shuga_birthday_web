@@ -234,4 +234,28 @@
   }
 }
 
+.rolls-overlay {
+  background: #0c080a;
+}
+
+@media (max-width: 700px) {
+  .rolls-overlay {
+    padding: 14px 14px 76px;
+  }
+
+  .rolls-dialog > header {
+    gap: 12px;
+  }
+
+  .rolls-dialog header h2 {
+    white-space: nowrap;
+    font-size: 8vw;
+  }
+
+  .rolls-close {
+    min-width: 72px;
+    padding-inline: 8px;
+  }
+}
+
 /*# sourceMappingURL=app_rolls_css_1igg3k2-ikub5._.single.css.map*/

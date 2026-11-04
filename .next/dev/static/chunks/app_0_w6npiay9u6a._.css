@@ -2661,17 +2661,49 @@ body {
 
 @media (max-width: 700px) {
   .soundtrack {
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
   }
 
   .soundtrack-toggle {
-    width: 190px;
-    min-height: 42px;
+    background: #211316f5;
+    border-radius: 2px;
+    width: 132px;
+    min-height: 40px;
+    padding: 0 12px;
+    box-shadow: 0 8px 24px #0003;
+  }
+
+  .soundtrack-toggle > span {
+    font-size: 0;
+  }
+
+  .soundtrack-toggle > span:after {
+    content: "SOUNDTRACK";
+    letter-spacing: .18em;
+    font-size: 8px;
+  }
+
+  .soundtrack-toggle b {
+    font-size: 15px;
   }
 
   .soundtrack > div {
-    width: min(320px, 100vw - 24px);
+    width: 220px;
+    margin-top: 5px;
+    margin-right: 0;
+  }
+
+  .soundtrack > div > div {
+    display: none;
+  }
+
+  .soundtrack iframe {
+    aspect-ratio: 16 / 9;
+  }
+
+  .soundtrack-open .soundtrack-toggle > span:after {
+    content: "CLOSE PLAYER";
   }
 }
 
@@ -2774,16 +2806,28 @@ body {
 }
 
 @media (min-width: 701px) {
+  .scrap {
+    min-height: 1350px;
+  }
+
   .scrap-title {
-    max-width: 48vw;
+    max-width: 52vw;
   }
 
   .p-one {
-    top: 49vh;
+    top: 62vh;
   }
 
   .p-two {
-    top: 45vh;
+    top: 56vh;
+  }
+
+  .p-three {
+    top: 91vh;
+  }
+
+  .cast-list {
+    bottom: 5vh;
   }
 }
 
@@ -2896,6 +2940,36 @@ body {
   letter-spacing: .14em;
   margin-bottom: 24px;
   display: block;
+}
+
+@media (max-width: 700px) {
+  .research-copy > strong {
+    overflow-wrap: normal;
+    font-size: clamp(2.8rem, 12vw, 4.2rem);
+  }
+
+  .film {
+    padding-bottom: 16vh;
+  }
+
+  .film-controls {
+    margin-bottom: 42px;
+  }
+
+  .archive-nav {
+    padding: 7px 11px !important;
+    bottom: 8px !important;
+  }
+
+  .archive-nav > div {
+    gap: 9px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .research-copy > strong {
+    font-size: 11.5vw;
+  }
 }
 
 /* [project]/app/rolls.css [app-client] (css) */
@@ -3131,6 +3205,30 @@ body {
   .contact-sheet {
     grid-template-columns: repeat(5, 1fr);
     gap: 6px;
+  }
+}
+
+.rolls-overlay {
+  background: #0c080a;
+}
+
+@media (max-width: 700px) {
+  .rolls-overlay {
+    padding: 14px 14px 76px;
+  }
+
+  .rolls-dialog > header {
+    gap: 12px;
+  }
+
+  .rolls-dialog header h2 {
+    white-space: nowrap;
+    font-size: 8vw;
+  }
+
+  .rolls-close {
+    min-width: 72px;
+    padding-inline: 8px;
   }
 }
 

@@ -36,7 +36,9 @@ function RootLayout({ children }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "preload",
                         as: "image",
-                        href: "/optimized/images/hero-portrait.avif",
+                        href: "/optimized/images/hero-portrait-800.avif",
+                        imageSrcSet: "/optimized/images/hero-portrait-480.avif 480w, /optimized/images/hero-portrait-800.avif 800w, /optimized/images/hero-portrait-1200.avif 1200w, /optimized/images/hero-portrait.avif 1600w",
+                        imageSizes: "100vw",
                         type: "image/avif"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
